@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		body {background-image: url('ff1.jpg'); background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;}
+		h1   {color: blue;}
+		p    {color: red;}
+
+</style>
+</head>
+	<body >
+		<div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card bg-light mt-5">
+                    <div class="card-title bg-primary text-white mt-5">
+                        <h3 class="text-center py-3">Create New Account </h3>
+                    </div>
+                    <div class = "card-body">
+							Back to login screen: <a href="logout.php?logout">Click here</a>
+							<form action="accounts.php" method="POST" enctype=multipart/form-data>
+												</br></br>
+
+								<font size="+2"><label for="first-name">First Name:</label></font></br>
+								<input type="text" name="first-name" id="first-name" class="form-control mb-3"></br></br>
+
+								<font size="+2"><label for="username">User ID number:</label></font></font></br>
+								<input type="number" name="username" id="username" class="form-control mb-3"></br></br>
+
+								<font size="+2"><label for="password">Password:</label></font></br>
+								<input type="password" name="password" id="password" class="form-control mb-3"></br></br>
+
+								<font size="+2"><font size="+2"><label for="cpassword">Confirm Password:</label></font></font></font></br>
+								<input type="password" name="cpassword" id="cpassword" class="form-control mb-3"></br></br>
+
+								<font size="+2"><strong>User Type:</strong> </font></font><br>
+								<input type="radio" name="type" value= "client" /> Client <br>
+								<input type="radio" name="type" value= "admin"/> Admin <br><br>
+
+								<font size="+2"><label for="wnumber">Admin Worker Number (for admin only):</label></font></br>
+								<input type="number" name="wnumber" id="wnumber" class="form-control mb-3"></br></br>
+
+								<input class="btn btn-success mt-3" type="submit" value="Save" name="createAccount">
+							</form>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>

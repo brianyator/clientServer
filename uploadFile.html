@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+	<body style="background:#CCC;">
+		<div class="container">
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card bg-light mt-5">
+                    <div class="card-title bg-primary text-white mt-5">
+                        <h3 class="text-center py-3">Welcome Admin </h3>
+                    </div>
+                    
+                    <div class = "card-body">
+						Admin Logout: <a href="logout.php?logout">Logout</a>
+						<form action="uploadFile.php" method="POST" enctype=multipart/form-data>
+							<strong>Admin Form:</strong>
+						</br></br>
+							<font size="+2"><label for="food-item">Food-Item:</label></font></br>
+							<input type="text" name="food-item" id="food-item"></br></br>
+
+							<font size="+2"><label for="file-upload">Upload Pic:</label></font></br>
+							<input type="file" name="fileUpload" id="file-upload"></br></br>
+
+							<font size="+2"><label for="price">Price:</label></font></br>
+							<input type="text" name="price" id="price"></br></br>
+
+							<input class="btn btn-success mt-3" type="submit" value="Save" name="submitimage">
+						</form>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>
